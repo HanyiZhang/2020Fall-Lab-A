@@ -11,7 +11,22 @@
 using namespace std;
 
 
-
+int prod(int a, int b){
+  int res = 1;
+  for(int i = a; i<=b;i++){
+    res *= i;
+  }
+  return res;
+}
+int max(int a[],int size){
+  int max = 0;
+  for(int i=0;i<size;i++){
+    if(a[size]>max){
+      max = a[size];
+    }
+  }
+  return max;
+}
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
        << '\n';  // should work no problem, right?
