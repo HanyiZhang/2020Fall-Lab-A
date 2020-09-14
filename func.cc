@@ -18,6 +18,7 @@ int sum(long long a,long long b){
   return sum;
 }
 
+<<<<<<< HEAD
 int mean(int a,int b){
   return (a+b)/2;
 }
@@ -25,6 +26,24 @@ int mean(int a,int b, int c){
     return (a+b+c)/3;
 }
 
+=======
+int prod(int a, int b){
+  int res = 1;
+  for(int i = a; i<=b;i++){
+    res *= i;
+  }
+  return res;
+}
+int max(int a[],int size){
+  int max = 0;
+  for(int i=0;i<size;i++){
+    if(a[size]>max){
+      max = a[size];
+    }
+  }
+  return max;
+}
+>>>>>>> c2da0f2fb7e60f7376c5e58ec124e1c27f9b1615
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
        << '\n';  // should work no problem, right?
