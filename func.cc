@@ -27,14 +27,14 @@ int mean(int a,int b, int c){
 }
 
 =======
-int prod(int a, int b){
+  int prod(int a, int b){//Daniil Novikov
   int res = 1;
   for(int i = a; i<=b;i++){
     res *= i;
   }
   return res;
 }
-double max(double a[],int size){
+double max(double a[],int size){//Daniil Novikov
   double max = 0;
   for(int i=0;i<size;i++){
     if(a[size]>max){
