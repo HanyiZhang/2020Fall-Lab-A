@@ -34,8 +34,8 @@ int prod(int a, int b){
   }
   return res;
 }
-int max(int a[],int size){
-  int max = 0;
+double max(double a[],int size){
+  double max = 0;
   for(int i=0;i<size;i++){
     if(a[size]>max){
       max = a[size];
