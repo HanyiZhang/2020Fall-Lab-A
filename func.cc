@@ -10,7 +10,20 @@
 #include <vector>
 using namespace std;
 
+int sum(long long a,long long b){
+  long long sum = 0;
+  for(int i = a;i<=b;i++){
+    sum+=i;
+  }
+  return sum;
+}
 
+int mean(int a,int b){
+  return (a+b)/2;
+}
+int mean(int a,int b, int c){
+    return (a+b+c)/3;
+}
 
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
