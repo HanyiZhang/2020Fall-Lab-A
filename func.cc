@@ -19,6 +19,24 @@ int sum(long long a,long long b){
 }
 
 <<<<<<< HEAD
+int sumsq(int m, int n){
+    int sum = 0;
+    for(int i = m; i <= n; i++){
+        sum += i*i;
+    }
+    return sum;
+}
+
+int min(int arr[], int n){
+    int min = m[0];
+    for(int i = 1; i < n; i++){
+        if(min < m[i]){
+            min = m[i];
+        }
+    }
+    return min;
+}
+
 int mean(int a,int b){
   return (a+b)/2;
 }
