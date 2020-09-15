@@ -217,3 +217,32 @@ int main() {
   cout << myhash("hash this!") << '\n';
   cout << myhash("hash a longer string") << '\n';
 }
+int prod(int arr[], int len) {  // product array function Matthew Russo
+  int i = 1;
+  while ((len - 1) >= 0) {
+    i *= arr[len - 1];
+    len--;
+  }
+  return i;
+}
+
+int countPrimes(int a, int b) {  // count primes function Matthew Russo
+  int count = 0;
+  int i = 2;
+  bool prime = true;
+  while (a <= b) {
+    while (i < (a / 2) && prime) {
+      if (a % i == 0) {
+        prime = false;
+      }
+      i++;
+    }
+    if (prime) {
+      count++;
+    }
+    prime = true;
+    i = 2;
+    a++;
+  }
+  return count;
+}
