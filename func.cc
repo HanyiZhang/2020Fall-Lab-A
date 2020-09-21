@@ -53,7 +53,7 @@ int mean(int a,int b, int c){
   }
   return res;
 }
-int max(double a[],int size){//Daniil Novikov
+int max(int a[],int size){//Daniil Novikov
   int max = a[0];
   for(int i=1;i<size;i++){
     if(a[size]>max){
