@@ -24,6 +24,16 @@ int diffsq(int a,int b){
   int sum=a-b;
   return sum;
 }
+//Phuc Bui
+int prod(int arr[], int length)
+{
+  int prod=1;
+  for (int i=0; i<length; i++)
+    {
+      prod*=arr[i];
+    }
+  return prod;
+}
 
 
 
