@@ -17,6 +17,15 @@ int sum(long long a,long long b){
   }
   return sum;
 }
+//Phuc Bui
+int diffsq(int a,int b){
+  a=a*a;
+  b=b*b;
+  int sum=a-b;
+  return sum;
+}
+
+
 
 //Pawan Perera
 int min(int arr[], int n) { int r = arr[0];
