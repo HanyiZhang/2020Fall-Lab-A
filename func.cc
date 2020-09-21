@@ -18,6 +18,34 @@ int sum(long long a,long long b){
   return sum;
 }
 
+//Pawan Perera
+int min(int arr[], int n) { int r = arr[0];
+  for (int i = 0; i < n; i++) {
+    if(r>arr[i]) {
+      r = arr[i];
+    }
+  }
+  return r;
+}
+
+//Pawan Perera
+int lcm(int a, int b) {
+  int n;
+  int lcm = 0;
+  if (a > b)
+    n = a;
+  else
+    n = b;
+  while (1) {
+    if (n % a == 0 && n % b == 0) {
+      cout << n;
+      break;
+    }
+    n++;
+  }
+  return n;
+}
+
 <<<<<<< HEAD
 //Justin
 int sumsq(int m, int n){
