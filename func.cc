@@ -59,7 +59,7 @@ int sumsq(int m, int n){
 int min(int arr[], int n){
     int min = arr[0];
     for(int i = 1; i < n; i++){
-        if(min < arr[i]){
+        if(min > arr[i]){
             min = arr[i];
         }
     }
@@ -81,9 +81,9 @@ int mean(int a,int b, int c){
   }
   return res;
 }
-double max(double a[],int size){//Daniil Novikov
-  double max = 0;
-  for(int i=0;i<size;i++){
+int max(double a[],int size){//Daniil Novikov
+  int max = a[0];
+  for(int i=1;i<size;i++){
     if(a[size]>max){
       max = a[size];
     }
@@ -205,8 +205,7 @@ int main() {
   square(arr8, sizeof(arr8) / sizeof(double));
   print(arr8, sizeof(arr8) / sizeof(double));
   squareRoot(arr8, sizeof(arr8) / sizeof(double));
-  print(arr8,
-        sizeof(arr8) / sizeof(double));  // should be back to orinal values
+  print(arr8, sizeof(arr8) / sizeof(double));  // should be back to orinal values
 
   int r1[] = {1, 2, 3, 4, 5, 6, 7};
   reverse(r1, 7);
