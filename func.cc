@@ -31,7 +31,7 @@ int sumsq(int m, int n){
 int min(int arr[], int n){
     int min = arr[0];
     for(int i = 1; i < n; i++){
-        if(min < arr[i]){
+        if(min > arr[i]){
             min = arr[i];
         }
     }

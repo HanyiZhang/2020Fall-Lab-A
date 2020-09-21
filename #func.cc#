@@ -18,8 +18,8 @@ int sum(long long a,long long b){
   return sum;
 }
 
-<<<<<<< HEAD
-int sumsq(int m, int n){
+
+int sumsq(int m, int n){ //checked by Matthew Russo
     int sum = 0;
     for(int i = m; i <= n; i++){
         sum += i*i;
@@ -54,7 +54,7 @@ int mean(int a,int b, int c){
 }
 
 =======
-  int prod(int a, int b){//Daniil Novikov
+  int prod(int a, int b){//Daniil Novikov  checked by Matthew Russo
   int res = 1;
   for(int i = a; i<=b;i++){
     res *= i;
