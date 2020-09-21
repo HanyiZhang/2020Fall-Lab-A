@@ -18,6 +18,34 @@ int sum(long long a,long long b){
   return sum;
 }
 
+//Pawan Perera
+int min(int arr[], int n) { int r = arr[0];
+  for (int i = 0; i < n; i++) {
+    if(r>arr[i]) {
+      r = arr[i];
+    }
+  }
+  return r;
+}
+
+//Pawan Perera
+int lcm(int a, int b) {
+  int n;
+  int lcm = 0;
+  if (a > b)
+    n = a;
+  else
+    n = b;
+  while (1) {
+    if (n % a == 0 && n % b == 0) {
+      cout << n;
+      break;
+    }
+    n++;
+  }
+  return n;
+}
+
 <<<<<<< HEAD
 //Justin
 int sumsq(int m, int n){
@@ -31,7 +59,7 @@ int sumsq(int m, int n){
 int min(int arr[], int n){
     int min = arr[0];
     for(int i = 1; i < n; i++){
-        if(min < arr[i]){
+        if(min > arr[i]){
             min = arr[i];
         }
     }
@@ -82,14 +110,45 @@ string isPrime(int x)
   }
   return res;
 }
-double max(double a[],int size){//Daniil Novikov
-  double max = 0;
-  for(int i=0;i<size;i++){
+int max(double a[],int size){//Daniil Novikov
+  int max = a[0];
+  for(int i=1;i<size;i++){
     if(a[size]>max){
       max = a[size];
     }
   }
   return max;
+}
+//Hunter Lederman
+int sum(int arr[], int length)
+{
+	int sum = 0;
+	for (int i = 0; i < length; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+}
+//Hunter Lederman
+string isPrime(int x)
+{
+	int max = sqrt(x);
+	string result = "";
+	if (x < 4)
+	{
+		result = "yes";
+	}
+	for (int i = 2; i <= max; i++)
+	{
+		if (x % i == 0)
+		{
+			result = "no";
+			break;
+		}
+		else
+			result = "yes";
+	}
+	return result;
 }
 >>>>>>> c2da0f2fb7e60f7376c5e58ec124e1c27f9b1615
 int main() {
@@ -206,8 +265,7 @@ int main() {
   square(arr8, sizeof(arr8) / sizeof(double));
   print(arr8, sizeof(arr8) / sizeof(double));
   squareRoot(arr8, sizeof(arr8) / sizeof(double));
-  print(arr8,
-        sizeof(arr8) / sizeof(double));  // should be back to orinal values
+  print(arr8, sizeof(arr8) / sizeof(double));  // should be back to orinal values
 
   int r1[] = {1, 2, 3, 4, 5, 6, 7};
   reverse(r1, 7);
