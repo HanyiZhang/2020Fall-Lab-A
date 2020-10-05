@@ -1,0 +1,5 @@
+CXX	:=	g++ --std=c++11 -g -O2
+all: lab5.cc lab5.s
+
+Lab5:  lab5.cc lab5.s
+	$(CXX) hw4.cc add.s -o hw4  #link the two .o files together into a program
