@@ -17,6 +17,25 @@ int sum(long long a,long long b){
   }
   return sum;
 }
+//Phuc Bui
+int diffsq(int a,int b){
+  a=a*a;
+  b=b*b;
+  int sum=a-b;
+  return sum;
+}
+//Phuc Bui
+int prod(int arr[], int length)
+{
+  int prod=1;
+  for (int i=0; i<length; i++)
+    {
+      prod*=arr[i];
+    }
+  return prod;
+}
+
+
 
 //Pawan Perera
 int min(int arr[], int n) { int r = arr[0];
@@ -72,7 +91,6 @@ int mean(int a,int b){
 int mean(int a,int b, int c){
     return (a+b+c)/3;
 }
-
 =======
   int prod(int a, int b){//Daniil Novikov
   int res = 1;
@@ -89,6 +107,37 @@ int max(int a[],int size){//Daniil Novikov
     }
   }
   return max;
+}
+//Hunter Lederman
+int sum(int arr[], int length)
+{
+	int sum = 0;
+	for (int i = 0; i < length; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+}
+//Hunter Lederman
+string isPrime(int x)
+{
+	int max = sqrt(x);
+	string result = "";
+	if (x < 4)
+	{
+		result = "yes";
+	}
+	for (int i = 2; i <= max; i++)
+	{
+		if (x % i == 0)
+		{
+			result = "no";
+			break;
+		}
+		else
+			result = "yes";
+	}
+	return result;
 }
 >>>>>>> c2da0f2fb7e60f7376c5e58ec124e1c27f9b1615
 int main() {
